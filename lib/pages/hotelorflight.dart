@@ -16,6 +16,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          color: Colors.white,
+        ),
         backgroundColor: Color.fromARGB(255, 25, 105, 171),
         title: Text(
           'Travel Options',
